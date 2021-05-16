@@ -460,7 +460,7 @@ h = blockimg
 w = blockimg
 temp = cv2.resize(temp, (h, w), interpolation=cv2.INTER_LINEAR)
 # Initialize output image
-cv2.resize(temp, (img1.shape[1], img1.shape[0]), interpolation=cv2.INTER_NEAREST)
+cv2.resize(temp, (output2.shape[1], output2.shape[0]), interpolation=cv2.INTER_NEAREST)
 cv2.imshow("blocking img before bind color ", temp)
 
 main_colors = [(colorpalte1),
